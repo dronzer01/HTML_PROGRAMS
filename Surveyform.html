@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Student Survey Form </h1>
+    <form id="survey-form">
+
+        <div class="form-control">
+            <label for="name" id="label-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="Class" id="label-email">Class</label>
+            <input type="number" id="class" placeholder="Enter your class" />
+        </div>
+        <div class="form-control">
+            <label for="Rollno" id="label-age">Roll no</label>
+            <input type="number" id="rollno" placeholder="Enter your rollno" />
+        </div>
+
+        <div class="form-control">
+            <label for="fav" id="label-role">
+                Which subject is your favourite?
+            </label>
+            <select name="subject" id="sub">
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label id="label-attendance">Are you satisfied with your classes & teacher's teaching methods?</label>
+            <label for="yes" id="yes">
+                <input type="radio" id="yes" name="yes">Yes</input>
+            </label>
+            <label for="no" id="no">
+                <input type="radio" id="no" name="no">No</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Which activity you prefer more?</label>
+            <br>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Speech Competitions</input>
+            </label>
+            <br>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Debate Competitions</input>
+            </label>
+            <br>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Quiz Competitions</input>
+            </label>
+            <br>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Sports Activities</input>
+            </label>
+            <br>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Open Discussions</input>
+            </label>
+            <br>
+        </div>
+
+        <div class="form-control">
+            <label for="feedback">
+                Any feedback or suggestions
+            </label>
+            <textarea name="feedback" id="feedback" placeholder="Enter your feedback/suggestions here">
+            </textarea>
+        </div>
+        <div class="button">
+            <button type="reset" value="reset" id="reset">
+                Reset
+            </button>
+            <button type="submit" value="submit" id="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+
+</body>
+
+</html>
