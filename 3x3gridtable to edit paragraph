@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>IT PRACTICAL-5</title>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<p id="p1"> Parakeets comprise about 115 species of birds that are seed-eating parrots of small size, slender build, and long, tapering tails.[2] The Australian budgerigar, also known as "budgie", Melopsittacus undulatus, is probably the most common parakeet. It was first described by zoologists in 1891. It is the most popular species of parakeet kept as a pet in North America and Europe.A rose-ringed parakeet (Psittacula krameri).The term "grass parakeet" (or grasskeet) refers to many small Australian parakeets native to grasslands such as the genus Neophema and the princess parrot. The Australian rosellas are also parakeets. Many of the smaller, long-tailed species of lories may be referred to as "lorikeets". The vernacular name ring-necked parakeet (not to be confused with the Australian ringneck) refers to a species of the genus Psittacula native to Africa and Asia that is popular as a pet and has become feral in many cities outside its natural range.In aviculture, the term "conure" is used for small to medium-sized parakeets of the genera Aratinga, Pyrrhura, and a few other genera of the tribe Arini, which are mainly endemic to South America. As they are not all from one genus, taxonomists tend to avoid the term. Other South American species commonly called parakeets include the genus Brotogeris parakeets, the monk parakeet, and lineolated parakeets, although lineolateds have short tails.</p>
+
+<div class="grid-container">
+  <div class="grid-item" input type="button" id="red"  onclick="changecolor('red')">RED</div>
+  <div class="grid-item" input  type="button" id="blue"  onclick="changecolor('blue')">BLUE</div>
+  <div class="grid-item" input  type="button" id="green" onclick="changecolor('green')">GREEN</div>
+  <div class="grid-item" input  type="button" id="10" onclick="dosize('10px')">10</div>
+  <div class="grid-item" input  type="button" id="15" onclick="dosize('15px')">15</div>
+  <div class="grid-item" input  type="button" id="20" onclick="dosize('20px')">20</div>
+  <div class="grid-item" input  type="button" id="f1" onclick="changefont('calibri')">CALIBRI</div>
+  <div class="grid-item" input  type="button" id="f2" onclick="changefont('cursive')">CURSIVE</div>
+  <div class="grid-item" input  type="button" id="f3" onclick="changefont('arial')">ARIAL</div>
+
+<script>
+function changecolor(color){
+document.getElementById('p1').style.color = color;
+}
+function dosize(size){
+document.body.style.fontSize = size;
+}
+function changefont(font){
+document.body.style.fontFamily = font;
+}
+</script>
+</body>
+</html>
